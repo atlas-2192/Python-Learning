@@ -62,6 +62,10 @@ csvfilename = 'hotspotlist.csv'
 parse_cvs_file_write_json(csvfilename, 'big5')
 
 
+print "A_lvr_land_A.CSV"
+csvfilename = 'A_lvr_land_A.CSV'
+parse_cvs_file_write_json(csvfilename, 'big5')
+
 #open utf8 csv
 #http://data.gov.tw/node/6794
 print 'car-utf.csv'
