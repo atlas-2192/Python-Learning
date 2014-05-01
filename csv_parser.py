@@ -3,6 +3,8 @@
 
 import csv  
 import json
+import chardet
+from chardet.universaldetector import UniversalDetector 
 
 '''
 Need reset system to utf8 encode way to if we want to decode big5 string
@@ -34,50 +36,34 @@ def force_decode(string, codecs=['utf8', 'big5']):
         	#print str(i)
             return string.decode(i)
         except:
-            pass
+        	pass
+        	print "pass"
+			
+
+def parse_cvs_file_write_json(csv_file_name, char_set):
+	f = open(csvfilename, 'r')
+	#for row in csv.reader(f):  
+	#	detector.feed(row)
+	#	if detector.done: 
+	#		break;
+	#output =[]
+	out = json.dumps( [row for row in csv.reader(f) ], encoding=char_set) 
+	#print "JSON parsed!"  
+	jsonfilename = csvfilename.split('.')[0] + '.json'
+	jsonf = open(jsonfilename, 'w')  
+	jsonf.write(out) 
+	f.close()  
+
 
 #open big5 csv
 #http://data.gov.tw/node/5962
 print 'hotspotlist.csv'
 csvfilename = 'hotspotlist.csv'
-jsonfilename = csvfilename.split('.')[0] + '.json'
+parse_cvs_file_write_json(csvfilename, 'big5')
 
-f = open(csvfilename, 'r')
-
-loop_count = 0
-output =[]
-#主管機關	地區	熱點名稱	地址	緯度	經度
-fieldnames = ("主管機關","地區","熱點名稱","地址", "緯度","經度")
-for each in csv.reader(f):  
-    #print force_decode(each[0])
-    #print force_decode(each[1])
-    row = {}
-    row['主管機關'] = each[0]
-    row['地區']  = each[1]
-    row['熱點名稱']  = each[2]
-    row['地址']   = each[3]
-    output.append(row)
-    print output 
-    loop_count+=1
-    #json.dump(row, jsonfile)
-    #jsonfile.write('\n')
-    if loop_count == 10:
-    	break
-out = json.dumps( [row for row in csv.reader(f) ], encoding='big5') 
-print "JSON parsed!"  
-jsonf = open(jsonfilename, 'w')  
-jsonf.write(out) 
-f.close()  
 
 #open utf8 csv
 #http://data.gov.tw/node/6794
 print 'car-utf.csv'
-f = open('car-utf.csv', 'r')  
-loop_count = 0
-for row in csv.reader(f):  
-    print force_decode(row[1])  
-    loop_count += 1
-    if loop_count == 10:
-    	break
-f.close()  
-
+csvfilename = 'car-utf.csv'
+parse_cvs_file_write_json(csvfilename, 'utf8')
