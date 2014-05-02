@@ -8,26 +8,28 @@ import cv2.cv as cv
 import cv2
 import sys
 import copy
-'''
+
 def rotate_camera(currImage, _90_degrees_steps_anti_clockwise):
-	if (_90_degrees_steps_anti_clockwise != 2):
-		rotatedImage = cv.CreateImage(cv.cvGetSize(cvSize(currImage), 8, 3)
-		# YUV: 8, 3
-		# GRAY: 8,1
-	else
+	if _90_degrees_steps_anti_clockwise != 2 :
+		image_size = cv.GetSize(currImage)
+		print image_size, currImage.depth, currImage.nChannels
+		rotatedImage = cv.CreateImage(image_size, currImage.depth, 3)
+		# YUV: 8, 3 / GRAY: 8,1
+	else:
 		rotatedImage = cv.CloneImage(currImage)
  
-	if (_90_degrees_steps_anti_clockwise != 2):
-		cvTranspose(currImage, rotatedImage);
+	if _90_degrees_steps_anti_clockwise != 2 :
+		print currImage, rotatedImage
+		#cv.Transpose(currImage, rotatedImage)
  
-	if (_90_degrees_steps_anti_clockwise == 3):
-		cv.cvFlip(rotatedImage, null, 1)
-	else if (_90_degrees_steps_anti_clockwise == 1):
-		cv.cvFlip(rotated, NULL, 0)
-	else if (_90_degrees_steps_anti_clockwise == 2):
-		cv.cvFlip(rotated, NULL, -1);
+	if  _90_degrees_steps_anti_clockwise == 3 :
+		cv.Flip(rotatedImage, rotatedImage, 1)
+	elif _90_degrees_steps_anti_clockwise == 1 :
+		cv.Flip(rotatedImage, rotatedImage, 0)
+	elif _90_degrees_steps_anti_clockwise == 2 :
+		cv.Flip(rotatedImage, rotatedImage, -1)
 	return rotatedImage
-'''
+
 def repeat():
 	global capture #declare as globals since we are assigning to them now
 	global camera_index
@@ -35,7 +37,6 @@ def repeat():
 	global firstImage
 	global rotation_angle
 	currImage = cv.QueryFrame(capture) 
-	cv.ShowImage("Webcam",currImage)
 	'''
 	Note:
 		WaitKey only receive key from the windows you create not python command line windows :)
@@ -47,12 +48,14 @@ def repeat():
 	if (c!=-1):
 		print str(c)
 	if (c==63235): # "->" key
-		rotation_angle = (rotation_angle + 90) % 360
+		rotation_angle = ((rotation_angle + 90) % 360) / 90
 		print "rotation angle = "+ str(rotation_angle)
+		currImage = rotate_camera(currImage, rotation_angle)
 	elif (c==63234): # "<-" key
-		rotation_angle = (rotation_angle +270) % 360
+		rotation_angle = ((rotation_angle +270) % 360) / 90
 		print "rotation angle = "+ str(rotation_angle)
-		#rotate_camera(currImage, 1)
+		currImage = rotate_camera(currImage, rotation_angle)
+	cv.ShowImage("Webcam",currImage)
 
 
 #Main
@@ -68,5 +71,4 @@ while isRunning:
 	repeat()
 
 #Release resource
-cv2.VideoCapture.release() 
 cv.DestroyWindow("Webcam")
