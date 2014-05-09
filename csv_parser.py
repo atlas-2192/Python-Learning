@@ -57,17 +57,18 @@ def parse_cvs_file_write_json(csv_file_name, char_set):
 
 #open big5 csv
 #http://data.gov.tw/node/5962
-print 'hotspotlist.csv'
-csvfilename = 'hotspotlist.csv'
-parse_cvs_file_write_json(csvfilename, 'big5')
+if __name__ == "__main__":
+	print 'hotspotlist.csv'
+	csvfilename = 'data/hotspotlist.csv'
+	parse_cvs_file_write_json(csvfilename, 'big5')
 
 
-print "A_lvr_land_A.CSV"
-csvfilename = 'A_lvr_land_A.CSV'
-parse_cvs_file_write_json(csvfilename, 'big5')
+	print "A_lvr_land_A.CSV"
+	csvfilename = 'data/A_lvr_land_A.CSV'
+	parse_cvs_file_write_json(csvfilename, 'big5')
 
-#open utf8 csv
-#http://data.gov.tw/node/6794
-print 'car-utf.csv'
-csvfilename = 'car-utf.csv'
-parse_cvs_file_write_json(csvfilename, 'utf8')
+	#open utf8 csv
+	#http://data.gov.tw/node/6794
+	print 'car-utf.csv'
+	csvfilename = 'data/car-utf.csv'
+	parse_cvs_file_write_json(csvfilename, 'utf8')
