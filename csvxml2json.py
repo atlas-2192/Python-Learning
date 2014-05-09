@@ -5,9 +5,7 @@ import urllib2, urllib
 import os
 import csv  
 import json
-#import chardet
 import requests
-#from chardet.universaldetector import UniversalDetector 
 try:
     from pyquery import PyQuery as pq
 except ImportError:
@@ -30,7 +28,7 @@ def whatisthis(s):
     else:
         print "not a string"
 '''
-Force trance code for string codec.
+Force decode for string codec.
 '''
 def force_decode(string, codecs=['utf8', 'big5']):
     for i in codecs:
@@ -38,6 +36,9 @@ def force_decode(string, codecs=['utf8', 'big5']):
             return string.decode(i)
         except:
         	pass
+'''
+Force encoding  for string codec.
+'''
 def force_encode_json(json_content, json_encode = ['utf8', 'big5']):
 	for i in json_encode:
            try:
