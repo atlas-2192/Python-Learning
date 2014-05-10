@@ -4,6 +4,7 @@ import json
 import sys
 reload(sys)
 sys.setdefaultencoding("utf-8") 
+from lxml import etree
 
 try:
     from pyquery import PyQuery as pq
@@ -20,23 +21,49 @@ def read_file(fn):
     f.close()
     return data
 
+def xml_attrib_parse(xml_root):
+    all_data = []
+    map_d = {}
+    for each_info in xml_root[0][0]:
+        for attrs in each_info.iter('Info'):
+            for key, value in attrs.attrib.iteritems():
+                #print key, value
+                map_d[key] = value
+            all_data.append(map_d) 
+    return json.dumps(all_data) 
+
+def xml_element_parse(xml_root):
+    all_data = []
+    map_d = {}
+    for sales in xml_root:
+        for child in sales:
+            map_d[child.tag] = child.text
+        all_data.append(map_d)
+    return json.dumps(all_data) 
+
+def url_parse(url_address, xml_type):
+    file_content = urllib.urlopen(url_1).read()
+    parser = etree.XMLParser(recover=True)
+    xml_root = etree.fromstring(file_content, parser)
+
+    if xml_type == 1:
+        return xml_element_parse(xml_root)
+    else:
+        return xml_attrib_parse(xml_root)
+
+def file_parse(file_name, xml_type):
+    file_content = read_file(file_name)
+    parser = etree.XMLParser(recover=True)
+    xml_root = etree.fromstring(file_content, parser)
+
+    if xml_type == 1:
+        return xml_element_parse(xml_root)
+    else:
+        return xml_attrib_parse(xml_root)
 
 if __name__ == "__main__":
     '''
-    import xmltodict, json
-    from lxml import etree
-
-    file_1 = 'data/D_lvr_land_A.XML'
-    file_2 = 'data/test1.xml'
-    file_content = read_file(file_1)
-    parser = etree.XMLParser(recover=True)
-    xml_root = etree.fromstring(file_content, parser)
-    content_string = etree.tostring(xml_root)
-    print content_string
-    print "--------"
-    o = xmltodict.parse(content_string, encoding='big5')
-    print json.dumps(o) # '{"e": {"a": ["text", "text"]}}'
-    #first test parse string
+    #first sample
     d=pq('<?xml version="1.0" encoding="utf-8" ?><Tutorial ><Title>Cake PHP 4 - Saving and Validating Data</Title><Categories><Category>Tutorials</Category></Tutorial>')
     d('Title')#返回[<p>,<p>]
     print d('Title')#返回<p>test 1</p><p>test 2</p>
@@ -53,42 +80,20 @@ if __name__ == "__main__":
     #print d2('emap').html()
     #d2('Info').attr('groupTypeName').html() #返回http://hello.com
     '''
-
-    from lxml import etree
     print "Getting content from URL"
     file_1 = 'data/D_lvr_land_A.XML'
     file_2 = 'data/test1.xml'
     url_1  = 'http://cloud.culture.tw/frontsite/trans/emapOpenDataAction.do?method=exportEmapXML&typeId=B'
-    file_content = urllib.urlopen(url_1).read()
-    #file_content = read_file(file_1)
-    parser = etree.XMLParser(recover=True)
-    xml_root = etree.fromstring(file_content, parser)
-    #print etree.tostring(xml)
-    #print xml_root[0].tag
-    all_data = []
-    map_d = {}
-    
     ''' 'data/D_lvr_land_A.XML'
         <買賣>
             <鄉鎮市區>北區</鄉鎮市區>
             <交易標的>房地(土地+建物)</交易標的>
         </買賣>
-    '''        
-    for sales in xml_root:
-        for child in sales:
-            map_d[child.tag] = child.text
-        all_data.append(map_d)
-    ''' 
+    '''
+    print url_parse(url_1, 2)
+    '''
     <Info groupTypeName="工藝之家" 
         mainTypeName="工藝之家" 
      />
      '''
-    for each_info in xml_root[0][0]:
-        for attrs in each_info.iter('Info'):
-            for key, value in attrs.attrib.iteritems():
-                #print key, value
-                map_d[key] = value
-            all_data.append(map_d) 
-    #print xml_root[0][0].tag
-    print json.dumps(all_data) 
-    print "finish"
+    print file_parse(file_1, 1)
