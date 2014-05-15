@@ -8,8 +8,8 @@ from requests import session
 
 payload = {
     'action': 'login',
-    'email': 'evanslin@gmail.com',
-    'password': '1217'
+    'email': 'USERNAME',
+    'password': 'PASSWORD'
 }
 
 with session() as c:
@@ -17,3 +17,4 @@ with session() as c:
     request = c.get('http://tw.gigacircle.com/login.html?redir=publisher.html')
     #print request.headers
     print request.text
+    #Confirm it is different web page when password correct or not.
