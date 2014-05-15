@@ -49,6 +49,24 @@ def display_encode(string):
         #print 'skip encodoing'
         return string
 
+def get_latest_article_from_rss_source(rss_source):
+    feed = feedparser.parse(rss_url3)
+    rss_titles = []
+    rss_descriptions = []
+    if not feed:
+        print "no result"
+    else:
+        #print feed["url"], feed[ "version"], feed.modified
+        #feed.etag/modified only support modified wordpress other might not.
+        for feed_item in feed["items"]:
+            #print display_encode(feed_item["title"])
+            rss_titles.append(feed_item["title"])
+            rss_descriptions.append(feed_item["description"])
+            break;
+            #print feed_item["description"]
+        return rss_
+
+
 if __name__ == "__main__":
     is_std_default_equal_encoding = 1
     rss_url1 = "http://www.evanlin.com/blog/?feed=rss2"
@@ -59,20 +77,6 @@ if __name__ == "__main__":
     print 'default encoding =', sys.getdefaultencoding()
     print "-------------------------------------------------"
     print "Parsing rss data ....."
-    feed = feedparser.parse(rss_url3)
-    rss_items = []
-    rss_descriptions = []
-    if not feed:
-        print "no result"
-    else:
-        #print feed["url"], feed[ "version"], feed.modified
-        #feed.etag/modified only support modified wordpress other might not.
-        for feed_item in feed["items"]:
-            #print display_encode(feed_item["title"])
-            rss_items.append(feed_item["title"])
-            rss_descriptions.append(feed_item["description"])
-            break;
-            #print feed_item["description"]
         print len(rss_descriptions)
         print "-------------------------------------------------"
         print rss_descriptions[0]
