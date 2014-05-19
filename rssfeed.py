@@ -76,12 +76,13 @@ if __name__ == "__main__":
     rss_url1 = "http://www.evanlin.com/blog/?feed=rss2"
     rss_url2 = "http://www.mesotw.com/bbs/rss.php?fid=25&auth=XC%2BJZQY%2FS4nZo8sf%2F2iTWyoL%2FMb7Hk5bzA"
     rss_url3 = "http://blogs.myoops.org/lucifer.php?tempskin=_rss2"
+    rss_url4 = "http://rss.weatherzone.com.au/?u=12994-1285&lt=aploc&lc=9388&obs=1&fc=1&warn=1"
     print "----------------Print system data---------------"
     print 'stdout encoding =', sys.stdout.encoding
     print 'default encoding =', sys.getdefaultencoding()
     print "-------------------------------------------------"
     print "Parsing rss data ....."
-    my_result = get_latest_article_from_rss_source(rss_url1)
+    my_result = get_latest_article_from_rss_source(rss_url4)
     print 'tota; have ', len(my_result[0]), 'feeds'
     #for each in my_result[0]:
     print my_result[0][0].encode('utf-8')

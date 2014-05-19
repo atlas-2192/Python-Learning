@@ -3,16 +3,30 @@
 
 import sqlite3 as lite
 import sys
+reload(sys)
+sys.setdefaultencoding("utf-8")
 
-cars = (
-    (1, 'Audi', 52642),
-    (2, 'Mercedes', 57127),
-    (3, 'Skoda', 9000),
-    (4, 'Volvo', 29000),
-    (5, 'Bentley', 350000),
-    (6, 'Hummer', 41400),
-    (7, 'Volkswagen', 21600)
-)
+'''
+rss_data
+-rss_name
+-link
+-title
+-etag
+-modifired 
+
+rss_item_(rss_name)
+-item_index
+_title
+_link
+_description
+'''
+
+def create_db(name, table_template):
+
+def add_to_DB(insert_data):
+
+def query_from_db(rss_data):
+
 con = None
 
 try:
@@ -59,3 +73,6 @@ finally:
     
     if con:
         con.close()
+
+
+if __name__ == "__main__":        

@@ -85,7 +85,7 @@ def parse_csv_file(source_file, output_file):
 if __name__ == "__main__":
 	#url_address = 'http://data.gov.tw/iisi/logaccess?dataUrl=http%3A%2F%2Fwww.thb.gov.tw%2FTM%2FFiles%2FWebpage%2F201404%2F16_%25E5%2585%25A8%25E5%259C%258B%25E5%25A4%25A7%25E5%25AE%25A2%25E8%25BB%258A%25E7%25A6%2581%25E8%25A1%258C%25E8%25B7%25AF%25E6%25AE%25B5-utf.csv&type=CSV&nid=6794'
 	#parse_csv_url(url_address, 'url2.json', 'utf8')
-	#parse_csv_url('http://data.gov.tw/iisi/logaccess?dataUrl=http%3A%2F%2Fitaiwan.gov.tw%2Ffunc%2Fhotspotlist.csv&type=CSV&nid=5962', '')
+	parse_csv_url('http://data.gov.tw/iisi/logaccess?dataUrl=http%3A%2F%2Fitaiwan.gov.tw%2Ffunc%2Fhotspotlist.csv&type=CSV&nid=5962', '')
 	#parse_csv_file('data/workers_disease.csv', '')
 	print 'work!'
 	
