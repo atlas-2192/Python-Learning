@@ -5,7 +5,8 @@
 # 這是根據xmpp封裝的Jabber聊天機器人類, 可以通過繼承,重載部分函數來自定義功能.
 # Jabber ID(JID): 比如gamcat@gmail.com
 import xmpp
-
+import random
+import struct
 import sys
 reload(sys)
 sys.setdefaultencoding("utf-8")
@@ -56,9 +57,6 @@ class Bot:
         elif type == 'unavailable':
             self.unavailable(who)
 
-        print 'send mesaage to test2 for presence'
-        self.send('test2@xmpp-server1', 'test mesaage!!')
-
     def subscribe (self, jid):
         """ 加好友 """
         self.client.send(xmpp.Presence(to=jid, typ='subscribed'))
@@ -105,15 +103,23 @@ class Bot(Bot):
         #self.send2admin(msg)
         print 'coming message:', cont
 
+        message_out = ''
         if 'GetDeviceList' in cont:
-            self.send(self.Targe_ID, 'DeviceList:{003};{BDA1-ACFFFFFCC9927};{FF000000};{BDA2-BCFFFFFCC9927};{8F000000};{BDA3-CCFFFFFCC9927};{80000000};')
+            message_out = 'DeviceList:{003};{BDA1-ACFFFFFCC9927};{FF000000};{BDA2-BCFFFFFCC9927};{8F000000};{BDA3-CCFFFFFCC9927};{80000000};'
+            self.send(self.Targe_ID, message_out)
             
-        elif  'READ' in cont:
-            self.send(self.Targe_ID, 'READ')
+        elif  'Read' in cont:
+            message_out = 'Data:{BDA1-ACFFFFFCC9927};{{E32300}{E55000}{A2F41000000000}{9AF420000000}{99110000}{1010}{C1RSSI0000}{C2120000}{C30100}{C4}{C51A2B}}'
+            self.send(self.Targe_ID, message_out)
+        print 'sending message:', message_out
 
     def send2admin (self, message):
         #self.send('admin@gmail.com', 'Test')
         print 'send2admin'
+
+    def get_random_string(self, range):
+        return_string = struct.pack('<Q', random.randint(1, range))
+        return_string.encode('hex')
 
 if __name__ == '__main__':
     gb = Bot ('test1@xmpp-server1', '1234')
