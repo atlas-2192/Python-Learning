@@ -20,19 +20,31 @@ _title
 _link
 _description
 '''
+class FeedDB:
+    '''
+    Init parameter
+    '''
+    def __init__(self):
+        con = None
+        con = lite.connect('feeds.db')
+        cur = con.cursor()    
+    def __enter__(self):
+        print '__enter__'
+    def __exit__(self, type, value, traceback):
+        print '__exit__'
+    def __del__(self):
+        print 'del'
 
-def create_db(name, table_template):
+    def __repr__(self):
 
-def add_to_DB(insert_data):
+    def create_db(name, table_template):
 
-def query_from_db(rss_data):
+    def add_to_DB(insert_data):
 
-con = None
+    def query_from_db(rss_data):
 
 try:
-    con = lite.connect('test2.db')
     with con:
-        cur = con.cursor()    
         #cur.execute("DROP TABLE IF EXISTS Cars")
         #cur.execute("SELECT * FROM Cars")
         cur.execute("CREATE TABLE Cars(Id INT, Name TEXT, Price INT)")
