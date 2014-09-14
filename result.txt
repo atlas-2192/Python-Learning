@@ -1,0 +1,468 @@
+CaseInsensitiveDict({'content-encoding': 'gzip', 'x-powered-by': 'PHP/5.4.27', 'transfer-encoding': 'chunked', 'expires': 'Thu, 19 Nov 1981 08:52:00 GMT', 'vary': 'Accept-Encoding,User-Agent', 'server': 'cloudflare-nginx', 'connection': 'keep-alive', 'pragma': 'no-cache', 'cache-control': 'no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'date': 'Thu, 15 May 2014 06:50:44 GMT', 'cf-ray': '12ad672d70fb018f-NRT', 'content-type': 'text/html'})
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title>ä½èæ§å¶å° | Giga Circle</title>
+<meta name="description" content="ç¼è¡¨æç« ãç®¡çæç« ãæª¢è¦æ¶çãå¸³èè¨­å®åå¨ä½èæ§å¶å°">
+<meta name="keywords" content="ä½èæ§å¶å°"/>
+<meta property="fb:app_id" content="733940083304278"/>
+<meta property="og:site_name" content="Giga Circle"/>
+<link rel="shortcut icon" href="favicon.ico">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/tinynav.min.js"></script>
+<script type="text/javascript">
+	$(function () {
+		$('#nav').tinyNav({
+			active: 'selected',
+			header: 'ç¶²ç«å°å¼' 
+		});
+	});
+</script>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css?v=2" type="text/css">
+<link rel="stylesheet" href="css/style.css?v=38" type="text/css" media="screen, projection"/>
+<link rel="stylesheet" type="text/css" href="css/menusm.css?v=5"/>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/jquery.sticky.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="js/jquery.fancybox.css?v=2.1.5" media="screen"/>
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6224573-26', 'gigacircle.com');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+ 
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"arCfj1a8Dy00w7", domain:"gigacircle.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=arCfj1a8Dy00w7" style="display:none" height="1" width="1" alt=""/></noscript>
+ 
+<div id="wrapper">
+<div id="header">
+<div class="navbar navbar-fixed-top">
+<div class="topm">
+<div class="container">
+<ul>
+<li><a href="channel.html"><span>æå¡é »é</span></a></li>
+<li class="sep">|</li>
+<li><a href="category.html"><span>åé¡</span></a></li>
+<li class="sep">|</li>
+<li><a href="prizedraw.html" style="color:rgba(0,77,159,1.00)"><span>æ½çæ´»å</span></a></li>
+</ul>
+<ul style="float:right;">
+<li><a href="publisher.html?module=newcontent">ç¼è¡¨æç« </a></li>
+<li class="sep">|</li>
+<li><a href="c5406">æçé »é</a></li>
+<li class="sep">|</li>
+<li><a href="publisher.html">æ§å¶å°</a></li>
+<li class="sep">|</li>
+<li><a href="pm.html?module=inbox">ç§äººè¨æ¯(0)</a></li>
+</ul>
+</div>
+</div>
+<div class="container">
+<div class="navbar-inner">
+<div class="logo pull-left">
+<a href="index.html" class="extrabold" title="Giga Circle"><img src="images/logo.png" width="201" height="36" alt="Giga Circle"></a> </div>
+<form class="navbar-search pull-right" id="search" action="search.html" method="get">
+<div class="input-append">
+<input type="hidden" name="cx" value="partner-pub-4494277991028054:4347851206"/>
+<input type="hidden" name="cof" value="FORID:10"/>
+<input type="hidden" name="ie" value="UTF-8"/>
+<input type="hidden" name="hl" value="zh_TW"/>
+<input type="text" class="input-search" placeholder="æå°æç« " name="q">
+<button type="submit" name="sa" class="search-submit btn"><i class="icon-search"></i></button>
+</div>
+</form>
+<div class="social pull-right">
+<a href="https://www.facebook.com/gigacircle" target="_blank" title="Giga Circle ç²çµ²é "><img src="images/facebook-icon.png" width="24" height="24" alt="Giga Circle ç²çµ²é "></a>
+</div>
+<div class="clr"></div>
+<div class="nav nav-collapse">
+<div class="menu">
+<ul id="nav" class="sf-menu menusm">
+<li class="menuicon"><a href="index.html" class="menu_navigation" title="é¦é "><img src="images/homeicon.png"></a></li>
+<li><a href="trending.html"><span style="color:#FFF">ç±é</span></a></li>
+<li><a href="feed.html"><span style="color:#FFF">è¨é±</span></a></li> <li><a href="new-1"><span style="color:#FFF">ææ°</span></a></li>
+<li><a href="category.html?group=æ°è"><span>æ°è</span></a>
+<ul>
+<li><span><a href="s1-1">æäºæ°è</a></span></li>
+<li><span><a href="s11-1">å¶ä»è³è¨</a></span></li>
+<li><span><a href="s26-1">æè³çè²¡</a></span></li>
+</ul>
+</li>
+<li><a href="category.html?group=å¥è¶£"><span>å¥è¶£</span></a>
+<ul>
+<li><span><a href="s30-1">æç¬è²¼å</a></span></li>
+<li><span><a href="s3-1">å¥è¶£è³è¨</a></span></li>
+<li><span><a href="s14-1">æ¡æåé</a></span></li>
+<li><span><a href="s27-1">å¥è¶£è²¼å</a></span></li>
+<li><span><a href="s29-1">ææåå¿è²¼å</a></span></li>
+<li><span><a href="s2-1">å¶ä»çç¬</a></span></li>
+</ul>
+</li>
+<li><a href="category.html?group=æäº"><span>æäº</span></a>
+<ul>
+<li><span><a href="s4-1">ææå·æ²</a></span></li>
+<li><span><a href="s5-1">é©ææäº</a></span></li>
+<li><span><a href="s13-1">é·ç­å°èªª</a></span></li>
+<li><span><a href="s19-1">ç¬è©±å¤§é</a></span></li>
+<li><span><a href="s23-1">æ¿åµæäºº</a></span></li>
+</ul>
+</li>
+<li><a href="category.html?group=æ­£å¦¹"><span>æ­£å¦¹</span></a>
+<ul>
+<li><span><a href="s31-1">æ­£å¦¹ç¾çè²¼å</a></span></li>
+<li><span><a href="s32-1">æ¥éç¾å¥³è²¼å</a></span></li>
+<li><span><a href="s33-1">æ­ç¾ç¾å¥³è²¼å</a></span></li>
+<li><span><a href="s34-1">ææå¯«çè²¼å</a></span></li>
+<li><span><a href="s35-1">åç·å¸¥å¥è²¼å</a></span></li>
+<li><span><a href="s64-1">æ­£å¦¹ç­ç</a></span></li>
+<li><span><a href="s8-1">å¶ä»æ­£å¦¹</a></span></li>
+</ul>
+</li>
+<li><a href="category.html?group=çæ´»"><span>çæ´»</span></a>
+<ul>
+<li><span><a href="s17-1">çæ´»ç¾ç§</a></span></li>
+<li><span><a href="s18-1">æåº§å å</a></span></li>
+<li><span><a href="s20-1">å¿çæ¸¬é©</a></span></li>
+<li><span><a href="s21-1">ç·æ§è©±é¡</a></span></li>
+<li><span><a href="s22-1">å©æ§è©±é¡</a></span></li>
+<li><span><a href="s24-1">é«çå¥åº·</a></span></li>
+<li><span><a href="s48-1">å¥³æ§å°å</a></span></li>
+<li><span><a href="s49-1">å¿ææ¥è¨</a></span></li>
+<li><span><a href="s58-1">æéè³è¨</a></span></li>
+<li><span><a href="s59-1">åµæè¨­è¨</a></span></li>
+<li><span><a href="s60-1">å¯µç©è³è¨</a></span></li>
+<li><span><a href="s63-1">ç¾é£å»è</a></span></li>
+<li><span><a href="s65-1">å½çå°å</a></span></li>
+</ul>
+</li>
+<li><a href="category.html?group=ç­ç"><span>ç­ç</span></a>
+<ul>
+<li><span><a href="s50-1">çç¬ç­ç</a></span></li>
+<li><span><a href="s51-1">é³æ¨ç­ç</a></span></li>
+<li><span><a href="s52-1">æ¡æç­ç</a></span></li>
+<li><span><a href="s53-1">æ±½æ©è»ç­ç</a></span></li>
+<li><span><a href="s54-1">å¶ä»ç­ç</a></span></li>
+</ul>
+</li>
+<li><a href="category.html?group=ç§æ"><span>ç§æ</span></a>
+<ul>
+<li><span><a href="s6-1">é»ç©è³è¨</a></span></li>
+<li><span><a href="s10-1">æ¸ä½ç§æ</a></span></li>
+<li><span><a href="s45-1">ææ©å¹³æ¿</a></span></li>
+<li><span><a href="s46-1">ç¡¬é«è³è¨</a></span></li>
+<li><span><a href="s47-1">è»é«è³è¨</a></span></li>
+</ul>
+</li>
+<li><a href="category.html?group=èè¶£"><span>èè¶£</span></a>
+<ul>
+<li><span><a href="s12-1">æ±½è»æ©è»</a></span></li>
+<li><span><a href="s15-1">åæ¼«è³è¨</a></span></li>
+<li><span><a href="s40-1">è»äºè³è¨</a></span></li>
+<li><span><a href="s41-1">æ¨¡åè³è¨</a></span></li>
+<li><span><a href="s42-1">æå½±æè¡</a></span></li>
+</ul>
+</li>
+<li><a href="category.html?group=å¨æ¨"><span>å¨æ¨</span></a>
+<ul>
+<li><span><a href="s9-1">é³æ¨è³è¨</a></span></li>
+<li><span><a href="s16-1">çä»å«å¦</a></span></li>
+<li><span><a href="s25-1">å½±è¦è³è¨</a></span></li>
+<li><span><a href="s44-1">ç¶èè³è¨</a></span></li>
+</ul>
+</li>
+<li><a href="category.html?group=éå"><span>éå</span></a>
+<ul>
+<li><span><a href="s36-1">ç±çè³è¨</a></span></li>
+<li><span><a href="s37-1">æ£çè³è¨</a></span></li>
+<li><span><a href="s38-1">è¶³çè³è¨</a></span></li>
+<li><span><a href="s39-1">éåè²¼å</a></span></li>
+<li><span><a href="s7-1">å¶ä»éå</a></span></li>
+</ul>
+</li>
+<li><a href="#"><span>ç«å</span></a>
+<ul>
+<li><span><a href="s55-1">ç¶²ç«å¬å</a></span></li>
+<li><span><a href="s56-1">åé¡åå»ºè­°</a></span></li>
+<li><span><a href="s61-1">Giga Circle è¨è«</a></span></li>
+<li><span><a href="s62-1">ä»æ¬¾è­æ</a></span></li>
+<li><span><a href="s57-1">å¹æ°´èå¤©</a></span></li>
+</ul>
+</li>
+<li style="float:right;"><a href="makemoney.html"><span style="color:rgba(255,216,82,1.00)">ç¼æè³ºé¢</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="js/menusm.js?v=4"></script> <div class="clr"></div>
+<div class="mobpad">
+<div id="content">
+<div class="container" id="gallery" style="background:none;">
+<h1 class="extrabold" align="center" style="padding:10px 0;">ä½èæ§å¶å°</h1>
+<div class="content_page">
+<div class="row">
+<div class="span10 floatright pubh1">
+<div class="clr"></div>
+<div class="content_full_size">
+<div class="alert alert-info">æ¨å°æªè¨­ç½®æ¨çé »éåç¤ºï¼<a href="?module=channel">é¦¬ä¸è¨­ç½®</a></div>
+<div class="alert alert-info">è«è³<a href="?module=profile">å¸³èè¨­å®</a>è¼¸å¥æ¨çæ¶æ¬¾è³è¨</div>
+<div class="alert alert-alert"><strong>è¯çµ¡è³è¨æªé½å¨</strong><br/>æ¨å¿é è¼¸å¥æ¨çè¯çµ¡è³è¨æææ¶å°æ¬ç«å¯æ¬¾ï¼<a href="?module=profile">æ´æ°è¯çµ¡è³è¨</a></div>
+<div class="page-header" style="margin-top:0; padding-right:0;">
+<h1>æ¶ç</h1>
+</div>
+<table class="earningtable" border="0">
+<tr>
+<td><span class="number">US $0.00</span><br/><span class="time">æ¬æ¥</span></td>
+<td><span class="number">US $0.00</span><br/><span class="time">æ¨æ¥</span></td>
+<td><span class="number">US $0.00</span><br/><span class="time">æ¬æ</span></td>
+<td><span class="number">US $0.00</span><br/><span class="time">æªæ¯ä»</span></td>
+</tr>
+</table>
+<div class="page-header" style="margin-top:0;">
+<h1>é»é±ç</h1>
+</div>
+<table class="earningtable" border="0">
+<tr>
+<td><span class="number">0</span><br/><span class="time">æ¬æ¥</span></td>
+<td><span class="number">0</span><br/><span class="time">æ¨æ¥</span></td>
+<td><span class="number">0</span><br/><span class="time">æ¬æ</span></td>
+<td><span class="number">0</span><br/><span class="time">æªæ¯ä»</span></td>
+</tr>
+</table>
+</div>
+<div class="content_full_size">
+<section id="tables">
+<div class="page-header" style="margin-top:0; margin-bottom:2px;">
+<h1>æçä¸»é¡</h1>
+</div>
+<p>ä»æ¥ç¼ææ¸: 0</p>
+<table class="table table-bordered table-striped table-hover">
+<thead>
+<tr>
+<th>æ¨é¡</th>
+<th width="50">åè¦</th>
+<th width="50">é»é±</th>
+<th width="70">æ¶ç</th>
+<th width="80">åä½</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="6">æ¨å°æªæ°ç¼è¡¨ä½æç« </td>
+</tbody>
+</table>
+<div class="pagination">
+<ul>
+</ul>
+</div>
+</section>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-524262b47d5cbd82"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<link href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/flick/jquery-ui.min.css' rel='stylesheet' type='text/css'>
+<script>
+$(function () {
+	$( "#dialog-link" ).dialog({
+		autoOpen: false,
+		width: 320,
+		modal: false,
+		 show: {
+			effect: "fade",
+			duration: 500
+		},
+		hide: {
+			effect: "fade",
+			duration: 500
+		},
+		buttons: {
+			"éé": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function() {
+			$(".showcontentlink").blur();
+		}
+	});
+	$(".showcontentlink").click(function() {
+		$( "#url1" ).val($(this).attr('data-url1'));
+		
+		if($(this).attr('data-url2')==""){ 
+			$( "#urlc1" ).hide();
+		}else{
+			$( "#urlc1" ).show();
+			$( "#url2" ).val($(this).attr('data-url2'));
+		}
+		if($(this).attr('data-url3')==""){ 
+			$( "#urlc2" ).hide();
+		}else{
+			$( "#urlc2" ).show();
+			$( "#url3" ).val($(this).attr('data-url3'));
+		}
+		$( "#dialog-link" ).dialog( 'option', 'title', $(this).attr('data-title') );
+		$( "#dialog-link" ).dialog( "open" );
+		
+	});
+	$("#dialog-link input[type='text']").focus(function () {
+	   $(this).select();
+	});
+	 $( ".toolbarcontent a" ).tooltip({
+		show: {
+			effect: "none"
+		},
+		hide: {
+			effect: "none"
+		}
+		
+	});
+});	
+</script>
+<div id="dialog-link" title="Links to your content">
+<p>ä»¥ä¸é£çµåå¯é£æ¥è³æ¨çæç« ï¼è«å¦¥åå©ç¨ã</p>
+<fieldset>
+<label for="url1">ä¸»é£çµ</label>
+<input type="text" name="url1" id="url1" class="text ui-widget-content ui-corner-all input-xlarge">
+<div id="urlc1">
+<label for="url2">ç°¡åé£çµ1</label>
+<input type="text" name="url2" id="url2" class="text ui-widget-content ui-corner-all input-xlarge">
+</div>
+<div id="urlc2">
+<label for="url3">ç°¡åé£çµ2</label>
+<input type="text" name="url3" id="url3" class="text ui-widget-content ui-corner-all input-xlarge">
+</div>
+</fieldset>
+</div>
+</div>
+<div class="span2">
+<div>
+<div class="span2" style="margin-left:0;">
+<div class="well" style="padding: 8px 0;">
+<ul class="nav nav-list">
+<li class="default"><a href="publisher.html?module=dashboard">é¦é </a></li>
+<li class="nav-header">æç« </li>
+<li><a href="publisher.html?module=newcontent">ç¼è¡¨æç« </a></li>
+<li><a href="publisher.html?module=mycontent">æçæç« </a></li>
+<li class="nav-header">æ¶ç</li>
+<li><a href="publisher.html?module=earnings">æ¶çå ±å</a></li>
+<li><a href="publisher.html?module=referrals">ä¸ç·æå¡</a></li>
+<li><a href="publisher.html?module=ranking">æå¡ç­ç´</a></li>
+<li><a href="publisher.html?module=payhistory">å¯æ¬¾ç´é</a></li>
+<li class="nav-header">è¨­å®</li>
+<li><a href="publisher.html?module=channel">é »éè¨­å®</a></li>
+<li><a href="publisher.html?module=profile">åäººè³æ</a></li>
+<li class="nav-header">å¹«å©</li>
+<li><a href="publisher.html?module=chat">æå¡èå¤©å®¤</a></li>
+<li><a href="http://tw.gigacircle.com/29173-1" target="_blank">å¸¸è¦åé¡</a></li>
+<li><a href="http://tw.gigacircle.com/s56-1">è¯çµ¡æå</a></li>
+<li class="nav-header">éåº</li>
+<li><a href="login.html?action=logout">ç»åº</a></li>
+</ul>
+</div>
+<div style="margin-left:-10px">
+<div class="fb-like-box" data-href="https://www.facebook.com/gigacircle" data-width="158" data-height="250" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+</div>
+</div>
+<script>
+var found = 0;
+$( ".nav-list li a" ).each(function( index ) {
+	var currenturl = document.URL;
+	if(currenturl.indexOf($( this ).attr('href')) != -1){
+		$( this ).parent('li').addClass("active");
+		found = 1;
+	}
+});
+if(found==0)  $('li.default').addClass("active");
+</script>
+<div class="clr"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="clr separator"></div>
+</div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=733940083304278";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> </div>
+</div>
+<div id="footer">
+<div class="resize">
+<div class="cols">
+<div class="container">
+<div class="span3">
+<div class="sep_small"></div>
+<h4>å°å¼</h4>
+<ul class="footernav">
+<li><a href="index.html" class="menu_navigation"><span>é¦é </span></a></li>
+<li><a href="trending.html"><span>ç±é</span></a></li>
+<li><a href="category.html"><span>åé¡</span></a></li>
+<li><a href="channel.html"><span>é »é</span></a></li>
+<li><a href="publisher.html"><span>ç¼è¡¨æç« </span></a></li>
+<li><a href="pm.html?module=compose&to=2"><span>è¯çµ¡æå</span></a></li>
+</ul>
+</div>
+<div class="span4">
+<div class="sep_small"></div>
+<h4>éæ¼ Giga Circle</h4>
+<p> Giga Circle çºä¸ååµæ°å¨æ¨é¨è½æ ¼å¹³å°ï¼è®å¤§å®¶çåµä½é½è½å¤ å¨åä¸åç¶²ç«ä¸æåï¼æ¬ç«èç¾äºä¾èªåæ¹ç¶²ååçç²¾å½©æç« ãåçåå½±çãæ¬ç«ç¡æç¡å»é½æç¶²åæä¾ææ°æç« ï¼æ­¡è¿å¤§å®¶å¤å¤æè¨ª!<br/>
+</p>
+<br/>
+</div>
+<div class="span4">
+<div class="sep_small"></div>
+<h4>Giga Circle ç¶²è·¯è³ºé¢</h4>
+<p>å¨æ¬ç«ç¼è¡¨æç« æåµä½å¯è®æ¨è³ºåè±åæ¶å¥ãå å¥æå¡çºå®å¨åè²»ï¼è¨»åå¾æ¨æææèªå·±çé¨è½æ ¼é »éï¼ä¸¦å¯ç«å³ç¼è¡¨å§å®¹ï¼æ¯ç¶æç¨æ¶é»é±æ¨ç¼è¡¨çæç« æ¨å³å¯è³ºåç¾é! <br/><a href="makemoney.html">äºè§£æ´å¤</a>
+</p>
+<br/>
+</div>
+<div class="clr"></div>
+</div>
+<div class="clr"></div>
+</div>
+<div class="clr"></div>
+</div>
+<div class="copyright text-center">&copy; 2014 Giga Circle. All Rights Reserved. <a href="pubtos.html">ä½¿ç¨æ¢æ¬¾</a> | <a href="privacy.html">é±ç§æ¢æ¬¾</a> | <a href="abuse.html">ä¾µæ¬èå ±</a> | <a href="anticopy.html">èä½æ¬ä¿è­·</a></div>
+<div class="container ">
+<div class="span12 copyright" style="padding-top:0; margin-left:0; ">
+éè¦è²æï¼æ¬ç¶²ç«æ¯ä»¥å³æä¸è¼æç« çæ¹å¼éä½ï¼æ¬ç«å°æææç« ççå¯¦æ§ãå®æ´æ§åç«å ´ç­ï¼ä¸è² ä»»ä½æ³å¾è²¬ä»»ãèä¸åæç« å§å®¹åªä»£è¡¨ç¼æèåäººæè¦ï¼ä¸¦éæ¬ç¶²ç«ä¹ç«å ´ï¼ç¨æ¶ä¸æä¿¡è³´å§å®¹ï¼ä¸¦æèªè¡å¤æ·å§å®¹ä¹çå¯¦æ§ãç¼æèææå¨ Giga Circle å¼µè²¼çæç« ã ç±æ¼æ¬ç«æ¯åå°ãå³æç¼è¡¨ãéä½æ¹å¼æè¦éï¼æä¸è½å®å¨ç£å¯ææå³ææç« ï¼è¥è®èç¼ç¾æçè¨åºç¾åé¡ï¼è«<a href="contact.html">è¯çµ¡æå</a>ãæ¬ç«ææ¬åªé¤ä»»ä½çè¨åæçµä»»ä½äººå£«ç¼æï¼åæäº¦æä¸åªé¤æç« çæ¬å©ãåå¿æ°å¯«ç²è¨ç©¢èªãèª¹è¬ãæ¸²æè²ææ´åæäººèº«æ»æçè¨è«ï¼æ¬è«èªå¾ãæ¬ç¶²ç«ä¿çä¸åæ³å¾æ¬å©ã </div>
+</div>
+</div><script type="text/javascript">
+		$(document).ready(function() {
+			$('.fancybox').fancybox({
+				helpers : {
+					overlay : {
+						css : {
+							'background' : 'rgba(255, 255, 255, 0.3)'
+						}
+					}
+				},
+				afterShow: function(current, previous) {
+					$('#qemail').focus();
+				}
+			});
+		});
+</script>
+</body>
+</html>
+
