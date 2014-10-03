@@ -4,7 +4,7 @@ def send_email(user_name, pwd):
 	gmail_user = user_name
 	gmail_pwd = pwd
 	FROM = 'mail_alrt@gmail.com' #Not working, will alway use user account and password.
-	TO = ['TO_USER@gmail.com'] #must be a list
+	TO = ['evanslin@gmail.com'] #must be a list, send email to self
 	SUBJECT = "Testing sending using gmail"
 	TEXT = "Testing sending mail using gmail servers"
 
@@ -24,4 +24,7 @@ def send_email(user_name, pwd):
 	except:
 	    print "failed to send mail"
 
-send_email("GMAIL_ACCOUNT", "PASSWORD")
+gmail_account = raw_input("Please enter Gmail Account: ")
+gmail_pw = raw_input("Please enter Gmail Password: ")
+send_email(gmail_account, gmail_pw)
+
