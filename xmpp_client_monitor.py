@@ -5,6 +5,8 @@ import xmpp
 import random
 import struct
 import sys
+import datetime
+
 reload(sys)
 sys.setdefaultencoding("utf-8")
 
@@ -14,7 +16,7 @@ def send_email(user_name, pwd):
     gmail_user = user_name
     gmail_pwd = pwd
     FROM = 'mail_alrt@gmail.com' #Not working, will alway use user account and password.
-    TO = ['evanslin@gmail.com'] #must be a list, send email to self
+    TO = ['Email Test'] #must be a list, send email to self
     SUBJECT = "Testing sending using gmail"
     TEXT = "Testing sending mail using gmail servers"
 
@@ -119,8 +121,14 @@ class Bot(Bot):
     def message_callback (self, cl, msg):
         fromid = msg.getFrom().getStripped()
         cont = msg.getBody()
-        print 'coming message:', cont, 'from: ', fromid
-
+        if 'dainty' in fromid: 
+            print 'self call...'
+        else:
+            current_time = datetime.datetime.now()
+            #send notify to self to prevent timeout.
+            self.send('ID', "ALive")
+            print 'send message to evan'
+            print current_time, 'coming message:', cont, 'from: ', fromid
 
     def get_random_string(self, range):
         return_string = struct.pack('<Q', random.randint(1, range))
@@ -132,7 +140,7 @@ if __name__ == '__main__':
     #send_email(gmail_account, gmail_pw)
 
     use_test_server = True
-    gb = Bot ('dainty@xmpp-server1', '22988120')
+    gb = Bot ('ID', 'PWD')
 
     # 開始運行
     while (gb.step()): pass
