@@ -1,5 +1,9 @@
-#http://www.tuicool.com/articles/IJFV3i
-#pip install flickrapi
+''''
+PiPy http://www.tuicool.com/articles/IJFV3i
+How to install: #pip install flickrapi
+documentation http://stuvel.eu/media/flickrapi-docs/documentation/
+Api documentation http://stuvel.eu/media/flickrapi-docs/apidoc/
+'''
 import flickrapi
 import os
 import sys
@@ -9,6 +13,14 @@ sys.setdefaultencoding('utf-8')
 
 api_key = '000'
 api_secret = '000'
+
+
+def upload_func(progress, done):
+    if done:
+        print "Done uploading"
+    else:
+        print "At %s%%" % progress
+
 
 flickr = flickrapi.FlickrAPI(api_key, api_secret, cache=True)
   
@@ -21,6 +33,7 @@ flickr.get_token_part_two((token, frob))
 
 flickr = flickrapi.FlickrAPI(api_key, api_secret, token=token)
 
+'''
 try:
     photos = flickr.walk(text='girl', tag_mode='all',
         tags='girl',
@@ -40,3 +53,7 @@ try:
 except Exception,ex:
     print 'error'
     print Exception,':',ex
+'''
+
+flickr.upload(filename='test.jpg', callback=upload_func)
+print "done"
