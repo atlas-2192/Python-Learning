@@ -59,7 +59,7 @@ def repeat():
 
 
 #Main
-camera_index = -1 
+camera_index = 0 
 rotation_angle = 0
 capture = cv.CaptureFromCAM(camera_index)
 
