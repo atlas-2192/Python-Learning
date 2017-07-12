@@ -10,21 +10,26 @@ for i in range(0, n, 1):
 
 # query
 ret = []
-key = str(input().strip())
+key = input()
+
 j = 0
-while True:
+while key != "":
+    key_s = str(key)
     ret_str = ''
     if key not in d:
         ret_str = 'Not found'
     else:
-        ret_str = key + '=' + str(d.get(key))
+        ret_str = key_s + '=' + str(d.get(key_s))
     ret.append(ret_str)
     j = j + 1
     if j < n:
-        key = str(input().strip())
+        try:
+            key = input()
+        except EOFError:
+            break
     else:
         break
 
 # print ret
-for i in range(0, n, 1):
+for i in range(0, len(ret), 1):
     print(ret[i])
